@@ -35,10 +35,67 @@ class _HomePageState extends State<HomePage> {
       ),
 
       body: Column(children: [
+
         //ButtonWidget
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 25.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Container(
+                height: 50,
+                width: 100,
+                decoration: BoxDecoration(
+                 borderRadius: BorderRadius.circular(40),
+                 color: Colors.blue
+                ),
+                child: const Center(
+                  child: Text('All'),
+                ),
+              ),
+              Container(
+                height: 50,
+                width: 100,
+                decoration: BoxDecoration(
+                 borderRadius: BorderRadius.circular(40),
+                 border: Border.all(color: Colors.white),
+                 //color: Colors.deepPurple
+                ),
+                child: const Center(
+                  child: Text('Missed'),
+                )
+              ),
+            ],
+          ),
+        ),
+
+        const SizedBox(
+          height: 40,
+        ),
 
 
         //TextWidget
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 25.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  'Recents',
+                  style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
+                Icon(Icons.edit,),
+
+              ],
+          ),
+        ),
+
+        const SizedBox(
+          height: 10,
+        ),
 
         //SearchWidget
         Padding(
