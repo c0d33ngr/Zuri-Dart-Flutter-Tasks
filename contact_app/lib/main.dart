@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:contact_app/pages/recent_page.dart';
+import 'package:contact_app/pages/call_page.dart';
+
 
 void main() {
   runApp(
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: RecentPage(),
+      home: CallPage(),
       theme: ThemeData(
         brightness: Brightness.dark,
         primarySwatch: Colors.grey,
