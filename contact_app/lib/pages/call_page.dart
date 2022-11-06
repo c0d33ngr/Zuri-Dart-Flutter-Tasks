@@ -20,7 +20,7 @@ class _CallPageState extends State<CallPage> {
           width: 50,
           child: FloatingActionButton(
             backgroundColor: Colors.white.withOpacity(0.5),
-            child: Icon( Icons.qr_code_scanner, ),
+            child: Icon(Icons.crop_free,),
             onPressed: (){
               print("Button is pressed.");
             },
