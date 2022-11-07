@@ -29,7 +29,7 @@ class _LoginPageState extends State<LoginPage> {
 
         ///////////// BLOCK FOR WELCOME TEXT /////////////////
         Expanded(
-          flex: 1,
+          flex: 2,
           child: Column(children:[
 
             Padding(
@@ -56,7 +56,7 @@ class _LoginPageState extends State<LoginPage> {
 
         ///////////////// BLOCK FOR FORM FIELD ///////////////
         Expanded(
-          flex: 2,
+          flex: 3,
           child: Column(children: [
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
@@ -82,11 +82,16 @@ class _LoginPageState extends State<LoginPage> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
               child: Container(
+                width: 350,
+                height: 45,
                 decoration: BoxDecoration(
                   color: Colors.deepPurple,
-                  borderRadius: BorderRadius.circular(15),
+                  borderRadius: BorderRadius.circular(5),
                 ),
-                child: Text('Click button to login'),
+                child: Center(child: Text(
+                  'Click button to login',
+                  style: GoogleFonts.lato(fontSize:20.0),
+                ),),
               ),
             ),
 
@@ -94,7 +99,13 @@ class _LoginPageState extends State<LoginPage> {
         ),
         //////////////////END BLOCK FOR  FORM FIELD //////////
 
-        Text('Not a member? sign up here',),
+        Expanded(
+          flex: 1,
+          child: Text(
+            'Not a member? sign up here',
+            style: GoogleFonts.lato(fontSize: 15.0),
+          ),
+        ),
 
       ],),
     );
